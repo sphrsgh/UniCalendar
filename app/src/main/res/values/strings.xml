@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UniCal</string>
+    <string name="info">در این برنامه، شما روز های هفته و ساعات کلاسهای خود را وارد می کنید، پس از آن با هربار ورود به برنامه میتوانید کلاس های همان روز یا روز های دیگر را مشاهده کنید.</string>
+    <string name="start">شروع</string>
+    <string name="present">UniCalendar | تقویم دانشجویی</string>
+    <string name="welcome">خوش آمدید!</string>
+    <string name="sat">شنبه</string>
+    <string name="sun">یکشنبه</string>
+    <string name="mon">دوشنبه</string>
+    <string name="tue">سه شنبه</string>
+    <string name="wed">چهارشنبه</string>
+    <string name="thu">پنجشنبه</string>
+    <string name="fri">جمعه</string>
+</resources>

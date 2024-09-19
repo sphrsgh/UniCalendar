@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:layoutDirection="rtl">
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="انتخاب روز هفته:" />
+    <Spinner
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_weekdays"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/text_view">
+    </Spinner>
+    <EditText
+        android:id="@+id/et_class"
+        android:layout_below="@id/spinner_weekdays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام کلاس"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:id="@+id/tx_timeF"
+        android:layout_below="@+id/et_class"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ساعت کلاس از" />
+    <EditText
+        android:id="@+id/et_timeF"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_class"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/tx_timeF"
+        android:inputType="time"
+        android:maxLength="2" />
+    <TextView
+        android:id="@+id/tx_timeT"
+        android:layout_toLeftOf="@+id/et_timeF"
+        android:layout_below="@+id/et_class"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تا" />
+
+    <EditText
+        android:id="@+id/et_timeT"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_class"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/tx_timeT"
+        android:inputType="time"
+        android:maxLength="2"/>
+
+    <RadioGroup
+        android:id="@+id/radioGp"
+        android:layout_below="@id/et_timeF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <RadioButton
+            android:id="@+id/radioEvery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="هر هفته"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radioOdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="فرد" />
+        <RadioButton
+            android:id="@+id/radioEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="زوج"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="ذخیره"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_save"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="ویرایش"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="حذف"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
