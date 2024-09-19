@@ -1,5 +1,5 @@
 ﻿# UniCalendar
-
+![Image](https://github.com/sphrsgh/UniCalendar/blob/main/app/src/main/ic_launcher-playstore.png)
  A Calendar App for university students. (Android -Java-)
 
 # Screenshots
